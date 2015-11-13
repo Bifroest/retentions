@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <description>Library to understand retentions</description>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>bifroest-retentions</artifactId>
+  <packaging>jar</packaging>
+  <version>9.1.1-SNAPSHOT</version>
+  
+  <parent>
+    <groupId>com.goodgame.profiling</groupId>
+    <artifactId>profiling-base</artifactId>
+    <version>3.0.0</version>
+  </parent>
+  
+  <dependencies>
+
+   <!-- ################################################## -->
+    <dependency>
+        <groupId>com.goodgame.profiling</groupId>
+        <artifactId>profiling-commons</artifactId>
+        <version>26.8.0</version>
+    </dependency>
+   <!-- ################################################## -->
+    <dependency>
+        <groupId>org.kohsuke.metainf-services</groupId>
+        <artifactId>metainf-services</artifactId>
+        <version>1.5</version>
+    </dependency>
+
+   <!-- ################################################## -->
+  </dependencies>
+</project>
