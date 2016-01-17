@@ -1,0 +1,11 @@
+language: java
+jdk:
+  - oraclejdk8
+before_install:
+  - git clone git@github.com/Bifroest/commons.git
+  - pushd commons
+  - mvn install
+  - popd
+after_success:
+  - mvn clean test jacoco:report coveralls:report
+
