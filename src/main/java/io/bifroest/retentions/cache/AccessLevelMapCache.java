@@ -1,10 +1,10 @@
-package com.goodgame.profiling.graphite_retentions.cache;
+package io.bifroest.retentions.cache;
 
 import java.util.Optional;
 
+import io.bifroest.retentions.MutableRetentionConfiguration;
+import io.bifroest.commons.statistics.cache.CacheTracker;
 
-import com.goodgame.profiling.commons.statistics.cache.CacheTracker;
-import com.goodgame.profiling.graphite_retentions.MutableRetentionConfiguration;
 
 public class AccessLevelMapCache extends ThreadLocalMapCache {
     public AccessLevelMapCache(CacheTracker tracker, String name) {

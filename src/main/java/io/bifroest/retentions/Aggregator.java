@@ -1,10 +1,10 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import java.util.Iterator;
 
-import com.goodgame.profiling.commons.model.Interval;
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.statistics.aggregation.ValueAggregation;
+import io.bifroest.commons.model.Interval;
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.statistics.aggregation.ValueAggregation;
 
 public class Aggregator {
     private Aggregator() {

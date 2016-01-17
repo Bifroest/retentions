@@ -1,17 +1,17 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import java.util.AbstractSet;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.Objects;
 
 import org.apache.commons.collections4.iterators.FilterIterator;
-
-import com.goodgame.profiling.commons.model.Interval;
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.serialize.json.JSONSerializable;
-import java.util.Objects;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import io.bifroest.commons.model.Interval;
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.serialize.json.JSONSerializable;
 
 public class MetricSet extends AbstractSet<Metric> implements JSONSerializable {
     private final String name;

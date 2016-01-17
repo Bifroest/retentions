@@ -1,4 +1,4 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -10,8 +10,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.goodgame.profiling.commons.model.Interval;
-import com.goodgame.profiling.graphite_retentions.RetentionConfiguration;
+import io.bifroest.commons.model.Interval;
 
 public final class RetentionTable implements Comparable<RetentionTable> {
 

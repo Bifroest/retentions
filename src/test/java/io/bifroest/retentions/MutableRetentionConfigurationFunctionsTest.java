@@ -1,4 +1,4 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.goodgame.profiling.commons.statistics.aggregation.MaxAggregation;
-import com.goodgame.profiling.commons.statistics.aggregation.MinAggregation;
-import com.goodgame.profiling.commons.statistics.aggregation.ValueAggregation;
+import io.bifroest.commons.statistics.aggregation.MaxAggregation;
+import io.bifroest.commons.statistics.aggregation.MinAggregation;
+import io.bifroest.commons.statistics.aggregation.ValueAggregation;
 
 public class MutableRetentionConfigurationFunctionsTest {
     private MutableRetentionConfiguration subject;

@@ -1,4 +1,4 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import static org.junit.Assert.*;
 

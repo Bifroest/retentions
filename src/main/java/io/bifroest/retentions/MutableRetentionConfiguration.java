@@ -1,4 +1,4 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -19,12 +19,12 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 
-import com.goodgame.profiling.commons.statistics.aggregation.ValueAggregation;
-import com.goodgame.profiling.commons.statistics.aggregation.ValueAggregationFactory;
-import com.goodgame.profiling.commons.statistics.cache.CacheTracker;
-import com.goodgame.profiling.graphite_retentions.cache.AccessLevelMapCache;
-import com.goodgame.profiling.graphite_retentions.cache.AggregationFunctionMapCache;
-import com.goodgame.profiling.graphite_retentions.cache.ThreadLocalMapCache;
+import io.bifroest.retentions.cache.AccessLevelMapCache;
+import io.bifroest.retentions.cache.AggregationFunctionMapCache;
+import io.bifroest.retentions.cache.ThreadLocalMapCache;
+import io.bifroest.commons.statistics.aggregation.ValueAggregation;
+import io.bifroest.commons.statistics.aggregation.ValueAggregationFactory;
+import io.bifroest.commons.statistics.cache.CacheTracker;
 
 public class MutableRetentionConfiguration implements RetentionConfiguration {
     private static final Logger log = LogManager.getLogger();

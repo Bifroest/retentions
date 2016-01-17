@@ -1,6 +1,6 @@
-package com.goodgame.profiling.graphite_retentions.bootloader;
+package io.bifroest.retentions.bootloader;
 
-import com.goodgame.profiling.graphite_retentions.RetentionConfiguration;
+import io.bifroest.retentions.RetentionConfiguration;
 
 public interface EnvironmentWithMutableRetentionStrategy extends EnvironmentWithRetentionStrategy {
 

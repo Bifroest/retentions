@@ -1,10 +1,11 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import org.junit.Test;
 
-import com.goodgame.profiling.commons.model.Interval;
-import com.goodgame.profiling.commons.model.Metric;
 import static org.junit.Assert.*;
+
+import io.bifroest.commons.model.Interval;
+import io.bifroest.commons.model.Metric;
 
 public class MetricSetTest {
     @Test( timeout = 1000 )

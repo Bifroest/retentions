@@ -1,4 +1,4 @@
-package com.goodgame.profiling.graphite_retentions.cache;
+package io.bifroest.retentions.cache;
 
 import java.lang.ref.WeakReference;
 import java.util.Objects;
@@ -7,9 +7,9 @@ import org.apache.commons.collections4.map.LRUMap;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.goodgame.profiling.commons.statistics.cache.CacheTracker;
-import com.goodgame.profiling.graphite_retentions.MutableRetentionConfiguration;
-import com.goodgame.profiling.graphite_retentions.RetentionConfiguration;
+import io.bifroest.retentions.MutableRetentionConfiguration;
+import io.bifroest.retentions.RetentionConfiguration;
+import io.bifroest.commons.statistics.cache.CacheTracker;
 
 public abstract class ThreadLocalMapCache {
     

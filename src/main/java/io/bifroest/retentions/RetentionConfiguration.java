@@ -1,11 +1,11 @@
-package com.goodgame.profiling.graphite_retentions;
+package io.bifroest.retentions;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
-import com.goodgame.profiling.commons.model.Metric;
-import com.goodgame.profiling.commons.statistics.aggregation.ValueAggregation;
+import io.bifroest.commons.model.Metric;
+import io.bifroest.commons.statistics.aggregation.ValueAggregation;
 
 public interface RetentionConfiguration {
     ValueAggregation findFunctionForMetric( String name );

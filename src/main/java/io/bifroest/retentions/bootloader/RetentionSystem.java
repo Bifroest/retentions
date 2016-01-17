@@ -1,4 +1,4 @@
-package com.goodgame.profiling.graphite_retentions.bootloader;
+package io.bifroest.retentions.bootloader;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -10,20 +10,19 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.kohsuke.MetaInfServices;
 
-import com.goodgame.profiling.commons.boot.interfaces.Subsystem;
-//import com.goodgame.profiling.commons.exception.ConfigurationException;
-import com.goodgame.profiling.commons.statistics.units.SI_PREFIX;
-import com.goodgame.profiling.commons.statistics.units.TIME_UNIT;
-import com.goodgame.profiling.commons.statistics.units.parse.TimeUnitParser;
-import com.goodgame.profiling.commons.statistics.units.parse.UnitParser;
-import com.goodgame.profiling.commons.systems.SystemIdentifiers;
-import com.goodgame.profiling.commons.systems.configuration.ConfigurationObserver;
-import com.goodgame.profiling.commons.systems.configuration.EnvironmentWithJSONConfiguration;
-import com.goodgame.profiling.commons.systems.configuration.InvalidConfigurationException;
-import com.goodgame.profiling.graphite_retentions.MutableRetentionConfiguration;
-import com.goodgame.profiling.graphite_retentions.RetentionConfiguration;
-import com.goodgame.profiling.graphite_retentions.RetentionLevel;
-import com.goodgame.profiling.graphite_retentions.RetentionTable;
+import io.bifroest.retentions.MutableRetentionConfiguration;
+import io.bifroest.retentions.RetentionConfiguration;
+import io.bifroest.retentions.RetentionLevel;
+import io.bifroest.retentions.RetentionTable;
+import io.bifroest.commons.SystemIdentifiers;
+import io.bifroest.commons.boot.interfaces.Subsystem;
+import io.bifroest.commons.configuration.ConfigurationObserver;
+import io.bifroest.commons.configuration.EnvironmentWithJSONConfiguration;
+import io.bifroest.commons.configuration.InvalidConfigurationException;
+import io.bifroest.commons.statistics.units.SI_PREFIX;
+import io.bifroest.commons.statistics.units.TIME_UNIT;
+import io.bifroest.commons.statistics.units.parse.TimeUnitParser;
+import io.bifroest.commons.statistics.units.parse.UnitParser;
 
 @MetaInfServices
 public class RetentionSystem<E extends EnvironmentWithJSONConfiguration & EnvironmentWithMutableRetentionStrategy> implements Subsystem<E> {
