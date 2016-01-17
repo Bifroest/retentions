@@ -1,7 +1,6 @@
 # Data storage Configuration
 
-[![Build Status](https://travis-ci.org/Bifroest/retentions.svg?branch=master)](https://travis-ci.org/Bifroest/retentions)
-
+[![Build Status](https://travis-ci.org/Bifroest/retentions.svg?branch=master)](https://travis-ci.org/Bifroest/retentions) [![Coverage Status](https://coveralls.io/repos/Bifroest/retentions/badge.svg?branch=master&service=github)](https://coveralls.io/github/Bifroest/retentions?branch=master)
 ## Concepts
 
 ### Time, Days, Months and so on.
