@@ -1,5 +1,7 @@
 # Data storage Configuration
 
+[![Build Status](https://travis-ci.org/Bifroest/retentions.svg?branch=master)](https://travis-ci.org/Bifroest/retentions)
+
 ## Concepts
 
 ### Time, Days, Months and so on.
