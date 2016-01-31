@@ -39,4 +39,23 @@ public class RetentionTableTest {
 
         assertThat(subject.getInterval(), is(new Interval(someBlockIndex * someBlockSize, someBlockIndex * someBlockSize + someBlockSize)));
     }
+
+    @Test
+    public void containsTheRightValues() {
+        String someLevelName = "precise";
+        long someSecondsPerDataPoint = 20;
+        long someBlockNumber = 10;
+        long someBlockSize = 40;
+        String noNextLevel = null;
+        long someBlockIndex = 42;
+
+        RetentionLevel retentionLevel = new RetentionLevel(someLevelName, someSecondsPerDataPoint, someBlockNumber, someBlockSize, noNextLevel);
+
+        RetentionTable subject = new RetentionTable(retentionLevel, someBlockIndex);
+
+        assertThat(subject.contains(someBlockIndex * someBlockSize - 1), is(false)); // just 1 before start
+        assertThat(subject.contains(someBlockIndex * someBlockSize), is(true)); // start is inclusive
+        assertThat(subject.contains(someBlockIndex * someBlockSize + someBlockSize - 1), is(true)); // just 1 before end
+        assertThat(subject.contains(someBlockIndex * someBlockSize + someBlockSize), is(false)); // end is exclusive
+    }
 }
