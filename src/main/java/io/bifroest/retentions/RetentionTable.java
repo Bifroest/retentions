@@ -61,7 +61,7 @@ public final class RetentionTable implements Comparable<RetentionTable> {
         }
 
         if ( !StringUtils.isAlphanumeric( tableName() ) ) {
-            throw new IllegalStateException( "table name is not alphanumeric" );
+            throw new IllegalStateException( "table name " + tableName() + " is not alphanumeric" );
         }
     }
 
