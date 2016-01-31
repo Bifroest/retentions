@@ -25,10 +25,11 @@ public class RetentionTableTest {
 
     @Test
     public void testUnconfiguredTablesCannotBeCreated() {
+        String someLevelName = "level";
         RetentionConfiguration configuration = mock(RetentionConfiguration.class);
 
-        String wellformedTableName = "g" + "level" + RetentionTable.SEPARATOR_OF_MADNESS + "42";
-        when(configuration.getLevelForName("level")).thenReturn(Optional.empty());
+        String wellformedTableName = "g" + someLevelName + RetentionTable.SEPARATOR_OF_MADNESS + "42";
+        when(configuration.getLevelForName(someLevelName)).thenReturn(Optional.empty());
 
         assertThat(RetentionTable.canCreateTable(wellformedTableName, configuration), is(false));
     }
@@ -42,10 +43,10 @@ public class RetentionTableTest {
         String noNextLevel = null;
 
         RetentionLevel retentionLevel = new RetentionLevel(someLevelName, someSecondsPerDataPoint, someBlockNumber, someBlockSize, noNextLevel);
-        String wellformedTableName = "g" + "level" + RetentionTable.SEPARATOR_OF_MADNESS + "42";
+        String wellformedTableName = "g" + someLevelName + RetentionTable.SEPARATOR_OF_MADNESS + "42";
 
         RetentionConfiguration configuration = mock(RetentionConfiguration.class);
-        when(configuration.getLevelForName("level")).thenReturn(Optional.of(retentionLevel));
+        when(configuration.getLevelForName(someLevelName)).thenReturn(Optional.of(retentionLevel));
 
         assertThat(RetentionTable.canCreateTable(wellformedTableName, configuration), is(true));
     }
